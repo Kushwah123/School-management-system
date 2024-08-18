@@ -1,0 +1,199 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+:root {
+  --color-bg: #1f1f38;
+  --color-bg-variant: #2c2c6c;
+  --color-primary: #4db5ff;
+  --color-primary-variant: rgba(77, 181, 255, 0.4);
+  --color-light: rgba(255, 255, 255, 0.6);
+}
+
+/* FORM */
+/* .register {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+   color: #ffffff; 
+   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1510936111840-65e151ad71bb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=890&q=80");
+   background-color: var(--color-bg);
+  background-size: cover;
+  background-blend-mode: darken;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.registerTitle {
+  font-size: 50px;
+}
+
+.registerForm {
+  margin-top: -50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.registerForm>label {
+  margin: 10px 0;
+  color: rgb(0, 0, 0);
+}
+
+.registerInput {
+  padding: 10px;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+.registerInput:focus {
+  outline: none;
+}
+
+.registerButton {
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: #000000;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.registerButton:hover {
+  background-color: #313131;
+}
+
+@media screen and (max-width: 480px) {
+  .register {
+    background-position: right;
+  }
+
+  .registerInput {
+    font-size: 15px;
+    padding: 15px;
+    border-radius: 8px;
+  }
+
+  .registerButton {
+    font-size: 16px;
+    padding: 20px;
+    border-radius: 12px;
+  }
+}  */
+
+
+/* src/AddStudent.css */
+
+
+ .register {
+  max-width: 100%px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.registerForm {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+.registerTitle {
+  grid-column: span 3;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.registerInput {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 80%;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.registerButton {
+  grid-column: span 3;
+  padding: 0.75rem;
+  font-size: 1.25rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.registerButton:disabled {
+  background-color: #cccccc;
+}
+
+.registerButton:hover:enabled {
+  background-color: #0056b3;
+
+}
+/* Media queries for responsive design */
+ @media (max-width: 1024px) {
+  .registerForm {
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+  .registerButton {
+      grid-column: span 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .registerForm {
+      grid-template-columns: 1fr;
+  }
+
+  .registerButton {
+      grid-column: span 1;
+  }
+
+  .registerTitle {
+      font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .register {
+      padding: 1rem;
+  }
+
+  .registerInput {
+      font-size: 0.875rem;
+      padding: 0.375rem;
+  }
+
+  .registerButton {
+      font-size: 1rem;
+      padding: 0.5rem;
+  }
+
+  .registerTitle {
+      font-size: 1rem;
+  }
+} 
